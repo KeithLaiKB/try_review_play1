@@ -1,0 +1,517 @@
+Master Prompt
+Purpose
+Analyze my actual work experience, technical exposure, delivery responsibilities, and transferable skills based only on information available inside the authorized company environment.
+
+Do not assume that I personally implemented or owned anything just because it exists in the repository, documentation, ticket history, or project.
+
+Your job is to distinguish:
+- what I personally did,
+- what I participated in,
+- what I only observed,
+- what exists in the wider project but I did not work on,
+- and what I currently lack.
+Do not include confidential project names, company names, client names, internal system names, internal URLs, credentials, secrets, proprietary identifiers, production data, or sensitive business information in the final summary.
+Part 1 — Personal Contribution Analysis
+Use only the evidence I explicitly provide or make available in this session.
+
+In practice, assume you may have access only to:
+- the local repository or repositories that I open for you,
+- the code currently available in those repositories,
+- local Git history if available,
+- and a list of ticket IDs / ticket titles / ticket summaries that I manually provide.
+Do not assume you can access ticket systems, Confluence, remote repositories, deployment platforms, incident systems, chat history, or other company tools unless I explicitly provide their contents.
+
+If a ticket is only provided by name or ID without its full content, treat it only as a clue for what to search in the local repository. Do not invent ticket details.
+
+Your job is to correlate the local codebase and the ticket list I provide, then infer only what can be reasonably supported by that evidence.
+
+For every skill or responsibility below, classify my experience as:
+1. Strong evidence — independently performed
+2. Moderate evidence — participated / implemented with guidance
+3. Limited evidence — touched or observed
+4. Project-level only — exists in the project, but no evidence that I personally did it
+5. No evidence found
+For each item, also estimate my depth:
+- Basic
+- Working knowledge
+- Intermediate
+- Advanced
+Do not exaggerate my level.
+
+Evidence priority:
+1. Code I can show you locally
+2. My local Git commits / diffs, if available
+3. Ticket names or summaries I manually provide
+4. My own clarifications during the session
+If evidence is insufficient, say "insufficient evidence" instead of guessing.
+Part 2 — Technical Skills Inventory
+Priority A — Most important
+Java / Backend Engineering
+Assess evidence for:
+- Java core language
+- Object-oriented programming
+- Collections
+- Generics
+- Exception handling
+- Stream API
+- Optional
+- BigDecimal / numeric precision
+- Date and time handling
+- Serialization / deserialization
+- Clean code and refactoring
+- SOLID principles
+- Design patterns actually used
+Spring / Spring Boot
+Assess evidence for:
+- Spring Boot
+- Dependency Injection / IoC
+- Bean lifecycle
+- Configuration
+- REST controllers
+- Service / repository layers
+- Validation
+- Global exception handling
+- AOP
+- Transactions
+- Spring profiles
+- Configuration properties
+- Security exposure, if any
+REST / API / Integration
+Assess evidence for:
+- REST API development
+- HTTP methods and status codes
+- Request / response design
+- DTO design
+- API validation
+- API error handling
+- Upstream / downstream integration
+- Interface mapping
+- Data transformation
+- Contract-based integration
+- Versioning
+- Backward compatibility
+- Idempotency
+- Pagination
+- Retry behavior
+- Timeout handling
+- Error propagation
+Concurrency / Asynchronous Processing
+Assess evidence for:
+- Thread
+- Runnable / Callable
+- ExecutorService
+- ThreadPoolExecutor
+- Thread pool sizing
+- Queue selection
+- Rejection policies
+- CompletableFuture
+- async execution
+- parallel execution
+- synchronization
+- synchronized
+- volatile
+- atomic classes
+- locks
+- ThreadLocal
+- race conditions
+- deadlocks
+- timeout handling
+- exception handling in asynchronous flows
+- graceful degradation
+Database / SQL
+Assess evidence for:
+- SQL
+- complex joins
+- subqueries
+- CTE / WITH
+- UNION
+- aggregation
+- GROUP BY
+- window functions
+- NULL handling
+- Oracle-specific SQL
+- indexes
+- execution plans
+- query optimization
+- transactions
+- isolation levels
+- locking
+- database connection pools
+- data consistency
+- batch processing
+Priority B — Important for senior backend / system-oriented roles
+Microservices
+Assess evidence for:
+- microservice architecture
+- service-to-service communication
+- declarative HTTP clients
+- service dependencies
+- fault isolation
+- circuit breakers
+- retries
+- fallbacks
+- timeouts
+- cascading failure prevention
+- resiliency patterns
+- distributed tracing exposure
+JVM
+Assess evidence for:
+- heap / stack
+- JVM memory model
+- garbage collection
+- GC logs
+- memory leaks
+- OutOfMemoryError
+- thread dumps
+- heap dumps
+- CPU troubleshooting
+- JVM tuning
+- class loading
+Caching
+Assess evidence for:
+- Redis
+- local cache
+- TTL
+- cache invalidation
+- cache-aside pattern
+- cache penetration
+- cache breakdown / hot-key problems
+- cache avalanche
+- distributed locks
+Messaging / Event-Driven Systems
+Assess evidence for:
+- Kafka
+- RabbitMQ
+- MQ systems
+- producers
+- consumers
+- partitions
+- offsets
+- delivery semantics
+- duplicate messages
+- idempotent consumers
+- retry queues
+- dead-letter queues
+- ordering
+- eventual consistency
+System Design
+Assess evidence for:
+- layered architecture
+- module boundaries
+- service boundaries
+- scalability
+- availability
+- reliability
+- consistency
+- performance
+- fault tolerance
+- synchronous vs asynchronous design
+- database selection
+- caching decisions
+- messaging decisions
+- API design decisions
+- failure scenarios
+- capacity considerations
+- trade-off analysis
+Important:
+Do not mark "system design" as personal experience merely because the project has an architecture.
+Look specifically for evidence that I participated in design decisions or impact analysis.
+Part 3 — Engineering / Delivery Skills
+Assess evidence for:
+Git / Source Control
+- branching
+- merging
+- rebasing
+- cherry-picking
+- conflict resolution
+- release branches
+- pull requests
+- code reviews
+CI/CD
+- Jenkins
+- pipelines
+- build automation
+- automated tests
+- deployment automation
+- environment promotion
+- rollback procedures
+- configuration management
+- Ansible or similar tooling
+Testing
+- unit testing
+- JUnit
+- Mockito
+- integration testing
+- API testing
+- regression testing
+- SIT
+- UAT support
+- test data preparation
+- defect investigation
+- test coverage awareness
+Monitoring / Production Support
+- logs
+- monitoring
+- dashboards
+- metrics
+- alerting
+- Grafana or equivalent
+- incident investigation
+- production troubleshooting
+- root cause analysis
+- performance investigation
+- deployment verification
+- rollback
+- post-incident analysis
+Part 4 — BA / Systems Analysis / Requirement Skills
+This section is extremely important.
+
+Look only for evidence of my personal involvement.
+
+Assess whether I have experience in:
+Requirement Analysis
+- requirement clarification
+- identifying ambiguous requirements
+- asking follow-up questions
+- identifying missing requirements
+- functional requirements
+- non-functional requirements
+- business rules
+- acceptance criteria
+- edge cases
+- exception scenarios
+Impact Analysis
+- identifying affected systems
+- identifying affected APIs
+- identifying affected data fields
+- identifying downstream impact
+- identifying backward-compatibility impact
+- identifying testing scope
+- identifying deployment impact
+Systems Analysis
+- understanding end-to-end data flow
+- tracing data across systems
+- analyzing interfaces
+- dependency analysis
+- sequence diagrams
+- flow diagrams
+- identifying failure points
+- identifying ownership boundaries
+- understanding upstream/downstream responsibilities
+Solution Design
+- proposing implementation options
+- comparing alternative solutions
+- documenting technical solutions
+- writing solution-design documentation
+- documenting assumptions
+- documenting constraints
+- identifying risks
+- reviewing solutions with senior engineers or stakeholders
+Stakeholder Communication
+- communicating with remote teams
+- communicating with technical stakeholders
+- communicating with non-technical stakeholders
+- requirement clarification meetings
+- explaining technical limitations
+- negotiating scope
+- following up on unresolved questions
+- coordinating delivery across teams
+Delivery Ownership
+Determine whether I have ever personally owned:
+- a requirement from clarification to delivery,
+- a ticket from analysis to production,
+- a module or feature,
+- testing coordination,
+- release coordination,
+- defect resolution,
+- stakeholder follow-up.
+State clearly whether the evidence shows:
+- ownership,
+- participation,
+- or only implementation.
+Part 5 — Problem Solving Evidence
+Search specifically for examples where I personally:
+- discovered a bug that was not obvious,
+- found an incorrect requirement,
+- found an incorrect mapping or transformation,
+- discovered an integration issue,
+- identified a hidden dependency,
+- solved a concurrency issue,
+- solved a timeout issue,
+- solved a data consistency issue,
+- improved performance,
+- improved code quality,
+- simplified implementation,
+- prevented a production issue,
+- diagnosed an incident,
+- proposed a better implementation,
+- challenged an assumption,
+- prevented unnecessary work.
+For each example, summarize using:
+
+Situation → Problem → My Analysis → My Action → Result
+
+Do not invent measurable impact if none exists.
+Part 6 — Career-Level Assessment
+Based on the evidence, evaluate my current realistic level for each path:
+- Backend Developer
+- Java Developer
+- Integration Developer
+- Microservices Developer
+- Systems Analyst
+- Technical Business Analyst
+- IT Business Analyst
+- Application Support / Production Support
+- Solution Analyst
+- Technical Consultant
+- Delivery / Implementation Consultant
+- Technical Product-related role
+For each path provide:
+- Current fit: High / Medium / Low
+- Evidence supporting the fit
+- Missing experience
+- Biggest interview risks
+- Skills that transfer from my current background
+- Whether the transition is realistic now or requires additional experience
+Do not recommend a role simply because it sounds senior or prestigious.
+Part 7 — Interview Knowledge Gap Analysis
+Identify concepts that a candidate with my observed experience would reasonably be expected to know in interviews.
+
+Separate into:
+Must know now
+Concepts that should already be explainable based on my experience.
+Should learn next
+Concepts that naturally extend my current experience.
+Low priority
+Concepts that are useful but not currently worth prioritizing.
+
+For every gap, explain:
+- Why interviewers may ask it
+- Whether I have indirect exposure
+- What depth I need:
+  - definition only,
+  - practical understanding,
+  - implementation-level,
+  - design-level.
+Part 8 — Resume Evidence Extraction
+Extract resume-worthy experience based only on verified personal contribution.
+
+Create three categories:
+A. Safe, strong resume claims
+Evidence clearly shows I personally performed the work.
+B. Usable with careful wording
+I participated, but should not claim ownership.
+C. Do not claim
+The technology or responsibility exists in the project, but there is insufficient evidence that I personally worked on it.
+
+For category A and B, rewrite the experience into generic resume language.
+
+Do not include:
+- company names,
+- client names,
+- project names,
+- internal system names,
+- proprietary terminology,
+- confidential business information,
+- real production data,
+- credentials,
+- URLs,
+- internal identifiers.
+Prefer statements such as:
+
+"Implemented asynchronous service integration with timeout and exception handling."
+
+rather than any project-specific description.
+
+Do not fabricate numbers, scale, performance improvements, or ownership.
+Part 9 — Hidden Skills Discovery
+Do not limit the analysis to the skills listed above.
+
+Search my work history for additional transferable skills that I may not realize I have.
+
+Examples may include:
+- data integration,
+- ETL-like transformation,
+- reconciliation,
+- configuration-driven processing,
+- workflow orchestration,
+- schema validation,
+- backward compatibility,
+- release management,
+- debugging distributed flows,
+- cross-team coordination,
+- technical documentation,
+- requirement traceability,
+- production support,
+- regulatory delivery exposure,
+- financial-domain exposure,
+- operational risk awareness.
+Only report skills with evidence.
+Part 10 — Final Output Format
+Produce the following reports.
+Report A — Skills Matrix
+Table columns:
+
+| Skill | Personal Evidence | Experience Level | Depth | Confidence | Resume Safe? | Interview Risk | Recommended Next Step |
+Report B — My Strongest 15 Skills
+Rank the strongest 15 skills demonstrated by my actual work.
+
+For each one explain briefly why it ranks highly.
+Report C — My Biggest 15 Gaps
+Rank the gaps by career impact, not by how technically impressive they sound.
+Report D — Realistic Career Direction
+Give a realistic assessment of which career paths best match the evidence today.
+
+Do not assume I must remain a developer.
+
+Do not assume BA is easier than development.
+
+Do not assume management is automatically a promotion.
+
+Evaluate the evidence objectively.
+Report E — Technical Interview Preparation
+Generate a prioritized interview syllabus based on my real experience.
+
+Divide into:
+1. Must prepare
+2. Should prepare
+3. Optional
+For each topic, specify the depth required.
+Report F — Experience Interview Stories
+Identify the best real examples for behavioral / experience interviews.
+
+Prepare STAR-style outlines for topics such as:
+- difficult technical problem,
+- requirement ambiguity,
+- cross-team communication,
+- production issue,
+- tight deadline,
+- disagreement,
+- defect investigation,
+- solution improvement,
+- learning something quickly,
+- ownership.
+Do not invent experiences.
+Report G — Sanitized Personal Summary
+Finally create a short summary containing only generic, non-confidential information that I could manually review and, if company policy permits, use outside the internal environment.
+
+The summary should include only:
+- generic technology names,
+- generic responsibility categories,
+- approximate skill depth,
+- general strengths,
+- general weaknesses,
+- career-fit conclusions,
+- topics I should study.
+Exclude all project-specific, organization-specific, client-specific, system-specific, repository-specific, ticket-specific, production-specific, and business-sensitive information.
+Final Rules
+1. Do not confuse project capabilities with my personal capabilities.
+2. Do not fabricate experience.
+3. Do not inflate seniority.
+4. Do not assume ownership without evidence.
+5. Explicitly identify areas where the evidence is uncertain.
+6. Prioritize long-lasting engineering and analytical skills over fashionable technologies.
+7. Distinguish "I used it" from "I understand it deeply."
+8. Distinguish "I implemented it" from "I designed it."
+9. Distinguish "I participated" from "I owned it."
+10. Make the final career assessment evidence-driven rather than title-driven.
